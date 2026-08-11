@@ -13,13 +13,20 @@
                     Contact actions (add, search/filter)
                 </div>
             </div>
-            <!-- {{ dd(get_defined_vars()) }} -->
+            <!-- {{ dump($contact['name']) }} -->
             <!-- repeat for each contact -->
 
             <!-- contact card -->
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-zinc-900">
                     Contact Card here
+                    <!-- dd($contact) -->
+                    <!-- <x-contact-card :contact="$contact">
+                        Contact Card
+                    </x-contact-card> -->
+                    <x-contact-card :contact="$contact" class="shadow" :showPhone="false" >
+                        View Contact - this is the slot content
+                    </x-contact-card>
                 </div>
             </div>
             <!-- /contact card -->

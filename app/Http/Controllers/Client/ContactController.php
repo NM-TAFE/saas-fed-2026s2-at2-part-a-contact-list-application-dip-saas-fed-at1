@@ -9,11 +9,19 @@ use Illuminate\Http\Request;
 
 final class ContactController extends Controller
 {
-    public function index(string $name)
+    public function index()
     {
-        // dd($name);
+        $contact = [
+            "id" => 1,
+            "name" => "john",
+            "email" => "test@test.com",
+            "phone" => "0888888888",
+            "active" => true,
+        ];
+
+        // dd($contact);
 
         // return "Welcome to the index method in the contact controller {$name}";
-        return view("contacts.index", ["name" => $name]);
+        return view("client.contacts.index", ["contact" => $contact]);
     }
 }

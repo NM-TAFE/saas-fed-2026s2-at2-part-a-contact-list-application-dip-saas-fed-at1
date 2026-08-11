@@ -23,5 +23,3 @@ Route::name("web.static.")->group(function (): void {
         "terms",
     ])->name("terms-and-conditions");
 });
-
-Route::get("/contacts/{name}", [ContactController::class, "index"]);
