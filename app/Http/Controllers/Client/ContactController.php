@@ -25,7 +25,7 @@ final class ContactController extends Controller
         return view("client.contacts.index", ["contact" => $contact]);
     }
 
-    public function show(): View
+    public function show()
     {
         // dd($name);
         $contact = [
@@ -39,7 +39,7 @@ final class ContactController extends Controller
         return view("client.contacts.show", ["contact" => $contact]);
     }
 
-    public function create(): View
+    public function create()
     {
         // dd($name);
         $contact = [
@@ -53,7 +53,7 @@ final class ContactController extends Controller
         return view("client.contacts.create", ["contact" => $contact]);
     }
 
-    public function edit(): View
+    public function edit()
     {
         // dd($name);
         $contact = [
